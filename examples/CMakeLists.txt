@@ -8,6 +8,25 @@
 
 set(CATLASS_EXAMPLES_COMMON_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/common)
 set(CATLASS_EXAMPLES_CUBESELF_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/cube_op_self)
+set(CATLASS_EXAMPLE_LINK_LIBRARIES
+    ${ASCEND_HOME_PATH}/lib64/libascendcl.so
+    ${ASCEND_HOME_PATH}/lib64/libnnopbase.so
+)
+
+find_library(CATLASS_OPAPI_LIBRARY
+    NAMES opapi
+    PATHS
+        ${ASCEND_HOME_PATH}/lib64
+        ${ASCEND_HOME_PATH}/runtime/lib64
+        ${ASCEND_HOME_PATH}/tools/lib64
+    NO_DEFAULT_PATH
+)
+
+if(CATLASS_OPAPI_LIBRARY)
+    list(APPEND CATLASS_EXAMPLE_LINK_LIBRARIES ${CATLASS_OPAPI_LIBRARY})
+else()
+    message(STATUS "libopapi.so not found under ASCEND_HOME_PATH, skip linking opapi.")
+endif()
 
 add_custom_target(catlass_examples)
 
@@ -21,10 +40,7 @@ macro(catlass_example_add_executable NAME AICORE_ARCH)
     # $<$<COMPILE_LANGUAGE:ASCEND>:-DASCENDC_TRACE_ON>
     add_executable(${NAME} ${ARGN})
     target_compile_options(${NAME} PRIVATE $<$<COMPILE_LANGUAGE:ASCEND>:--cce-aicore-arch=${AICORE_ARCH}>)
-    target_link_libraries(${NAME} PRIVATE
-                      ${ASCEND_HOME_PATH}/lib64/libascendcl.so
-                      ${ASCEND_HOME_PATH}/lib64/libnnopbase.so
-                      ${ASCEND_HOME_PATH}/lib64/libopapi.so)
+    target_link_libraries(${NAME} PRIVATE ${CATLASS_EXAMPLE_LINK_LIBRARIES})
     add_dependencies(catlass_examples ${NAME})
     install(TARGETS ${NAME} DESTINATION ${EXAMPLE_DESTINATION} COMPONENT ${NAME})
     install(TARGETS ${NAME} DESTINATION ${EXAMPLE_DESTINATION} COMPONENT catlass_examples)
