@@ -110,19 +110,19 @@ cd output/bin/
 Results:
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP32_checksum.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP32_checksum.png" alt="FT-GEMM FP32 checksum generation">
   <br>
   <em>Figure 2: FT-GEMM results (FP32) of checksum generation (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP32_Areduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP32_Areduce.png" alt="FT-GEMM FP32 matrix A reduction">
   <br>
   <em>Figure 3: FT-GEMM results (FP32) of Matrix A Reduction (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP32_Breduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP32_Breduce.png" alt="FT-GEMM FP32 matrix B reduction">
   <br>
   <em>Figure 4: FT-GEMM results (FP32) of Matrix B Reduction and Threshold Computation (verified by comparing with CPU results)</em>
 </div>
@@ -137,19 +137,19 @@ cd output/bin/
 Results:
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_BF16_checksum.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_BF16_checksum.png" alt="FT-GEMM BF16 checksum generation">
   <br>
   <em>Figure 2: FT-GEMM results (BF16) of checksum generation (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_BF16_Areduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_BF16_Areduce.png" alt="FT-GEMM BF16 matrix A reduction">
   <br>
   <em>Figure 3: FT-GEMM results (BF16) of Matrix A Reduction (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_BF16_Breduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_BF16_Breduce.png" alt="FT-GEMM BF16 matrix B reduction">
   <br>
   <em>Figure 4: FT-GEMM results (BF16) of Matrix B Reduction and Threshold Computation (verified by comparing with CPU results)</em>
 </div>
@@ -164,19 +164,19 @@ cd output/bin/
 Results:
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP16_checksum.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP16_checksum.png" alt="FT-GEMM FP16 checksum generation">
   <br>
   <em>Figure 2: FT-GEMM results (FP16) of checksum generation (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP16_Areduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP16_Areduce.png" alt="FT-GEMM FP16 matrix A reduction">
   <br>
   <em>Figure 3: FT-GEMM results (FP16) of Matrix A Reduction (verified by comparing with CPU results)</em>
 </div>
 
 <div align="center">
-  <img src="./docs/images/FT_GEMM_INDI_FP16_Breduce.png" alt="./docs/images/AscendFT-GEMM-fp32-rowsum.png">
+  <img src="./docs/images/FT_GEMM_INDI_FP16_Breduce.png" alt="FT-GEMM FP16 matrix B reduction">
   <br>
   <em>Figure 4: FT-GEMM results (FP16) of Matrix B Reduction and Threshold Computation (verified by comparing with CPU results)</em>
 </div>
