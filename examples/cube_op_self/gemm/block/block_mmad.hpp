@@ -488,20 +488,6 @@ struct BlockGemm {
 
 } // namespace CubeSelf::Gemm::Block
 
-// catlass/ catlass/
-#include "gemm/block/block_mmad_pingpong.hpp"
-#include "gemm/block/block_mmad_pingpong_bias.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_no_splitk.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_splitk.hpp"
-// examples/cube_op_self/gemm/block/block_mmad_pingpong_fault_abe_no_splitk.hpp
-#include "gemm/block/block_mmad_pingpong_fault_abe_no_splitk.hpp"
-// examples/cube_op_self/gemm/block/block_mmad_pingpong_fault_no_splitk.hpp
-// examples/cube_op_self/gemm/block/block_mmad_pingpong_fault_abe_spec_no_splitk.hpp
-#include "gemm/block/block_mmad_pingpong_fault_abe_spec_no_splitk.hpp"
 #include "gemm/block/block_mmad_pingpong_fault_abe_spec_no_splitk_robust.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_abe_no_splitk_robust.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_abe_auged_no_splitk_robust.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_abe_auged_no_splitk.hpp"
 #include "gemm/block/block_mmad_pingpong_preload.hpp"
-#include "gemm/block/block_mmad_pingpong_fault_abe_auged_no_splitk_gemv.hpp"
 #endif
