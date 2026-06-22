@@ -26,16 +26,4 @@ class BlockEpilogue {
 }  // namespace Catlass::Epilogue::Block
 
 #include "catlass/epilogue/block/block_epilogue_elemwise_one_source.hpp"
-#include "catlass/epilogue/block/block_epilogue_fa_softmax.hpp"
-#include "catlass/epilogue/block/block_epilogue_fa_rescale_o.hpp"
-#include "catlass/epilogue/block/block_epilogue_mla_softmax.hpp"
-#include "catlass/epilogue/block/block_epilogue_mla_rescale_o.hpp"
-#include "catlass/epilogue/block/block_epilogue_mla_fd_rescale_o.hpp"
-#include "catlass/epilogue/block/block_epilogue_per_token_dequant.hpp"
-#include "catlass/epilogue/block/block_epilogue_gemm.hpp"
-#include "catlass/epilogue/block/block_epilogue_gemv.hpp"
-#include "catlass/epilogue/block/block_epilogue_mla_tp1_softmax.hpp"
-#include "catlass/epilogue/block/block_epilogue_mla_tp1_rescale_o.hpp"
-#include "catlass/epilogue/block/block_epilogue_online_softmax_no_mask.hpp"
-#include "catlass/epilogue/block/block_epilogue_rescale_o_no_split_row.hpp"
 #endif  // CATLASS_EPILOGUE_BLOCK_BLOCK_EPILOGUE_HPP
